@@ -6,13 +6,14 @@ import QuoteBox from './QuoteBox';
 
 function App() {
 
-  const colors = ['72147e', 'f21170', 'fa9905', 'ff5200', '23049d', 'aa2ee6', 'ff79cd', 'ffc996', 'ff8474', '9f5f80', '583d72','fdca40', 'a799b7'];
+  const colors = ['72147e', '23049d', 'aa2ee6', 'ff8474', '64bd97', '606470', 'ead3cb', '126e82'];
   const colorRandom = () => {
     let num =Math.floor(Math.random() * (colors.length));
     return colors[num];
   }
 
   let num = colorRandom();
+  console.log(num);
 
   const bgColor = {
     backgroundColor: `#${num}`

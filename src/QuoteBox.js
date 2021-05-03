@@ -20,10 +20,14 @@ const QuoteBox = ( {color} ) => {
     const [ {quote,author}, setQuote] = useState( quotes[getRandom()] );
 
     return (
-        <div className= "quoteCont" style = { fontColor }>
+        <div className= "quoteBox" style = { fontColor }>
             <Quote quote= { quote } author = { author } />
             <div className = "btnBox" >
-                <button className = "btn" onClick = { () => alert('Me dio amsiedad') } >Twitt</button>
+                <button className = "btn">
+                    <a href={`https://twitter.com/intent/tweet?text=${quote}%20by%20${author}&hashtags=academlo,TwittReact`} target="_blank" rel="noreferrer">
+                        Twittear
+                    </a>
+                </button>
                 <button className = "btn" onClick = { () => {
                     setQuote(quotes[getRandom()])
                     ReactDOM.render(

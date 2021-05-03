@@ -38,7 +38,7 @@
 
 /* My CSS Code */
 
-.quoteCont {
+.quoteBox {
   border-radius: 25px;
   background-color: #f4f3f3;
   /* background-color: #f4eee8; */
@@ -47,7 +47,7 @@
   padding: 15px;
 }
 
-.quoteCont > p {
+.quoteBoxt > p {
   margin-top: -25px;
   text-align: end;
 }
@@ -62,4 +62,9 @@
   width: 20%;
   font-size: 1rem;
   border-radius: 5px;
+}
+
+.btn > a {
+  color: black;
+  text-decoration: none;
 }
